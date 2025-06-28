@@ -1,7 +1,6 @@
 <!DOCTYPE HTML>
 <!--
-	Typify by TEMPLATED
-	templated.co @templatedco
+	Typify by TEMPLATED d.co @templatedco
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 -->
 <html>
@@ -13,92 +12,139 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<!-- <link rel="stylesheet" href="assets/css/main.css" /> -->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!-- FontAwesome CSS for icons -->
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+		<!-- Tailwind CSS CDN -->
+		<script src="https://cdn.tailwindcss.com"></script>
 	</head>
 	<body>
-
 		<!-- Banner -->
-			<section id="banner">
-				<img src="images/linux_onedrive_logo.jpg" alt="OneDrive Client for Linux Logo" width="157" height="183" />
-				<h1>OneDrive Client for Linux</h1>
-				<p><img src="https://img.shields.io/github/v/release/abraunegg/onedrive" alt="current_version" />&nbsp<img src="https://img.shields.io/github/release-date/abraunegg/onedrive" alt="release_date" />&nbsp<img src="https://img.shields.io/docker/pulls/driveone/onedrive" alt="docker_pulls" /></p>
-				<p>A free Microsoft OneDrive Client for Linux, which supports OneDrive Personal, OneDrive for Business, OneDrive for Office365 and Sharepoint, and fully supports Azure National Cloud Deployments (Microsoft Cloud for US Government, Microsoft Cloud Germany, Azure and Office 365 operated by 21Vianet in China). </p>
-				<p>This powerful and highly configurable OneDrive Client for Linux is simple to use and runs on all major Linux distributions such as Debian, Ubuntu, Mint, Manjaro, SuSE, OpenSuSE, Fedora, CentOS, Red Hat, Arch and Slackware.</p>
-				<p>This OneDrive Client for Linux is also available as a Docker container utilising Alpine Linux, Debian Bullseye and Fedora, with pre-built images available for x86_64, ARMHF and ARM64.</p>
-				<p>This OneDrive Client for Linux also supports one-way (upload or download only) and two-way sync operations with a variety of additional capabilities to suit your requirements and connects securely to Microsoft OneDrive services.</p>
-				<ul class="actions">
-					<li><a href="https://github.com/abraunegg/onedrive/blob/master/docs/install.md" class="button special">Build and Install from Github</a></li>
-					<li><a href="https://hub.docker.com/r/driveone/onedrive" class="button special">Run via Docker</a></li>
-				</ul>
-			</section>
+		<section id="banner" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 text-center">
+			<div class="max-w-5xl m-4">
+				<img src="images/linux_onedrive_logo.jpg" alt="OneDrive Client for Linux Logo" class="mx-auto mb-6 rounded-2xl shadow-lg w-40 h-44 object-contain" />	
+				<h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-4">OneDrive Client for Linux</h1>
+				<p class="text-xl md:text-2xl text-gray-700 mb-8 max-w-4xl mx-auto">A powerful and highly configurable OneDrive Client for Linux that is simple to use and runs on all major Linux distributions.</p>
+				
+				<div class="flex flex-wrap justify-center gap-2 mb-8">
+					<img src="https://img.shields.io/github/v/release/abraunegg/onedrive" alt="current_version" class="inline-block" />
+					<img src="https://img.shields.io/github/release-date/abraunegg/onedrive" alt="release_date" class="inline-block" />
+					<img src="https://img.shields.io/docker/pulls/driveone/onedrive" alt="docker_pulls" class="inline-block" />
+				</div>
 
-		<!-- One -->
-			<section id="one" class="wrapper special">
-				<div class="inner">
-					<header class="major">
-						<h2>OneDrive Client for Linux Features</h2>
-						<p>This free Microsoft OneDrive Client for Linux provides the following features and capabilities:</p>
-					</header>
-					<div class="features">
-						<div class="feature">
-							<i class="fa fa-wrench"></i>
-							<h3>Platform Support</h3>
-							<p>Supports most Linux distributions and others such as FreeBSD across multiple architectures (i686, x86_64, ARMHF & ARM64)</p>
-						</div>
-						<div class="feature">
-							<i class="fa fa-cloud"></i>
-							<h3>OneDrive Account Support</h3>
-							<p>Works with OneDrive Personal, OneDrive for Business, Office365, SharePoint Libraries and Azure National Cloud Deployments</p>
-						</div>
-						<div class="feature">
-							<i class="fa fa-lock"></i>
-							<h3>Data Integrity</h3>
-							<p>Designed to ensure data integrity for your data - local state caching, file upload / download validation, resumable uploads</p>
-						</div>
-						<div class="feature">
-							<i class="fa fa-bolt"></i>
-							<h3>Test before Run</h3>
-							<p>Test your changes before actually running the configuration. Prevent major accidental data deletion after client configuration change</p>
+				<div class="flex flex-wrap justify-center gap-8">
+                    <!-- GitHub Installation Card -->
+                    <a href="https://github.com/abraunegg/onedrive/blob/master/docs/install.md" class="bg-white max-w-96 rounded-xl shadow-lg p-6 transition-all duration-300 hover:shadow-xl hover:scale-105">
+                        <div class="flex items-center mb-4">
+                            <i class="fa fa-github text-4xl text-gray-800 mr-4"></i>
+                            <div class="text-left">
+                                <h3 class="text-xl font-semibold text-gray-900">GitHub Installation Guide</h3>
+                                <p class="text-gray-600 text-sm">Build from source or use a package manager</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-4 text-left">Get detailed installation instructions for your Linux distribution or build the OneDrive client from source code.</p>
+                    </a>
+
+                    <!-- Docker Card -->
+                    <a href="https://hub.docker.com/r/driveone/onedrive" class="bg-white max-w-96 rounded-xl shadow-lg p-6 transition-all duration-300 hover:shadow-xl hover:scale-105">
+                        <div class="flex items-center mb-4">
+                            <svg class="w-10 h-10 mr-4" viewBox="0 0 24 24" fill="#2496ED">
+                                <path d="M13.983 11.078h2.119a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.119a.185.185 0 00-.185.185v1.888c0 .102.083.185.185.185m-2.954-5.43h2.118a.186.186 0 00.186-.186V3.574a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.186m0 2.716h2.118a.187.187 0 00.186-.186V6.29a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.887c0 .102.082.185.185.186m-2.93 0h2.12a.186.186 0 00.184-.186V6.29a.185.185 0 00-.185-.185H8.1a.185.185 0 00-.185.185v1.887c0 .102.083.185.185.186m-2.964 0h2.119a.186.186 0 00.185-.186V6.29a.185.185 0 00-.185-.185H5.136a.186.186 0 00-.186.185v1.887c0 .102.084.185.186.186m5.893 2.715h2.118a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m-2.93 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.083.185.185.185m-2.964 0h2.119a.185.185 0 00.185-.185V9.006a.185.185 0 00-.184-.186h-2.12a.186.186 0 00-.186.186v1.887c0 .102.084.185.186.185m0 2.715h2.119a.186.186 0 00.185-.185v-1.888a.185.185 0 00-.185-.185h-2.119a.185.185 0 00-.185.185v1.888c0 .102.084.185.186.185m-2.84 0h2.119a.185.185 0 00.185-.185v-1.888a.185.185 0 00-.185-.185h-2.12a.186.186 0 00-.185.185v1.888c0 .102.083.185.185.185"/>
+                            </svg>
+                            <div class="text-left">
+                                <h3 class="text-xl font-semibold text-gray-900">Docker Container</h3>
+                                <p class="text-gray-600 text-sm">Quick deployment with Docker</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-4 text-left">Run the OneDrive client in a Docker container with pre-built images for multiple architectures including x86_64, ARM, and ARM64.</p>
+                    </a>
+                </div>
+				
+				<!-- Scroll Down Indicator -->
+				<div class="absolute animate-bounce top-[90%] left-1/2 -translate-x-1/2">
+					<svg class="mx-auto w-10 h-10 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"></path>
+					</svg>
+					<svg class="mx-auto w-10 h-10 text-gray-500 -mt-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"></path>
+					</svg>
+				</div>
+			</div>
+		</section>
+
+		<!-- Compatibility Cards -->
+		<section id="compatibility" class="py-16 px-4 bg-gray-50 flex flex-col items-center justify-center">
+			<div class="max-w-6xl m-4">
+				<header class="text-center mb-12">
+					<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Features</h2>
+				</header>
+
+				<div class="grid md:grid-cols-3 gap-8 mb-8">
+					<div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl shadow-lg p-6 transition-all duration-300 hover:shadow-xl hover:scale-105">
+						<i class="fa fa-cloud text-3xl text-blue-600 mb-4"></i>
+						<h3 class="text-xl font-semibold text-gray-900 mb-3">Compatibility</h3>
+						<p class="text-gray-700">Supports OneDrive Personal, OneDrive for Business, OneDrive for Office365, Sharepoint, and Azure National Cloud Deployments (Microsoft Cloud for US Government, Microsoft Cloud Germany, Azure and Office 365 operated by 21Vianet in China).</p>
+					</div>
+					<div class="bg-gradient-to-br from-green-50 to-green-100 rounded-xl shadow-lg p-6 transition-all duration-300 hover:shadow-xl hover:scale-105">
+						<i class="fa fa-desktop text-3xl text-green-600 mb-4"></i>
+						<h3 class="text-xl font-semibold text-gray-900 mb-3">Distributions</h3>
+						<p class="text-gray-700">Works on Debian, Ubuntu, Mint, Manjaro, SuSE, OpenSuSE, Fedora, CentOS, Red Hat, Arch and Slackware. across multiple architectures (i686, x86_64, ARMHF & ARM64)</p>
+					</div>
+					<div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl shadow-lg p-6 transition-all duration-300 hover:shadow-xl hover:scale-105">
+						<i class="fa fa-cogs text-3xl text-purple-600 mb-4"></i>
+						<h3 class="text-xl font-semibold text-gray-900 mb-3">Deployment</h3>
+						<p class="text-gray-700">Can be built from source, Available as a package manager on official package managers. This OneDrive Client for Linux is also available as a Docker container utilising Alpine Linux, Debian Bullseye and Fedora, with pre-built images available for x86_64, ARMHF and ARM64.</p>
+					</div>
+				</div>
+
+				<div class="grid md:grid-cols-2 gap-8 mb-8">
+					<div class="bg-white rounded-xl shadow-lg p-8 transition-all duration-300 hover:shadow-xl hover:scale-105">
+						<i class="fa fa-exchange text-3xl text-blue-600 mb-4"></i>
+						<h3 class="text-xl font-semibold text-gray-900 mb-3">Flexible Syncing</h3>
+						<p class="text-gray-700">This OneDrive Client for Linux also supports one-way (upload or download only) and two-way sync operations with a variety of additional capabilities to suit your requirements and connects securely to Microsoft OneDrive services.</p>
+					</div>
+					<div class="bg-white rounded-xl shadow-lg p-8 transition-all duration-300 hover:shadow-xl hover:scale-105">
+						<i class="fa fa-lock text-3xl text-green-600 mb-4"></i>
+						<h3 class="text-xl font-semibold text-gray-900 mb-3">Data Integrity</h3>
+						<p class="text-gray-700">Designed to ensure data integrity for your data - local state caching, file upload / download validation, resumable uploads</p>
+					</div>
+				</div>
+				
+				<!-- Warning Card -->
+				<div class="bg-gradient-to-r from-yellow-50 to-orange-50 border-l-4 border-yellow-400 rounded-xl shadow-lg p-8">
+					<div class="flex items-start">
+						<i class="fa fa-bolt text-3xl text-yellow-600 mr-4 mt-1"></i>
+						<div>
+							<h3 class="text-xl font-semibold text-gray-900 mb-3">Caution</h3>
+							<p class="text-gray-700">Test changes to your configurations to prevent accidental data loss.</p>
 						</div>
 					</div>
-					<ul class="actions">
-						<li><a href="https://github.com/abraunegg/onedrive/blob/master/readme.md" class="button special">Learn More on Github</a></li>
-					</ul>
 				</div>
-			</section>
+			</div>
 
-		<!-- Two -->
-			<section id="two" class="wrapper style2 special">
-				<div class="inner narrow">
-					<header>
-						<h2>Get in touch</h2>
-					</header>
-					<div align='center'>
-						<table border='0' width='50%' bgcolor='#000000'>
-							<tr>
-								<td width='50%' align='right' bgcolor='#000000'>
-									<ul class="actions">
-										<li><a href="https://github.com/abraunegg/onedrive/" class="button special icon fa-github"></a></li>
-									</ul>
-								</td>
-								<td width='50%' align='left' bgcolor='#000000'>
-									<ul class="actions">
-										<li><a href="mailto:support@mynas.com.au" class="button special icon fa-envelope-o"></a></li>
-									</ul>
-								</td>
-							</tr>
-						</table>
-					</div>	
+			<div class="text-center mt-8 p-4 bg-gray-50">
+				<a href="https://github.com/abraunegg/onedrive/blob/master/readme.md" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-xl shadow-lg transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl">Learn More on Github</a></li>
+			</div>
+		</section>	
+
+		<!-- Footer / Contact Section -->
+		<section class="py-16 px-4 bg-gray-900 text-white flex flex-col items-center justify-center">
+			<div class="max-w-4xl m-4 text-center">
+				<header class="mb-8">
+					<h2 class="text-3xl md:text-4xl font-bold mb-4">Get in touch</h2>
+				</header>
+				<div class="flex flex-wrap justify-center gap-6">
+					<a href="https://github.com/abraunegg/onedrive/" class="bg-gray-800 hover:bg-gray-700 text-white p-4 rounded-xl shadow-lg transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl flex items-center gap-3">
+						<i class="fa fa-github text-2xl"></i>
+						<span class="font-semibold">GitHub Repository</span>
+					</a>
+					<a href="mailto:support@mynas.com.au" class="bg-gray-800 hover:bg-gray-700 text-white p-4 rounded-xl shadow-lg transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl flex items-center gap-3">
+						<i class="fa fa-envelope-o text-2xl"></i>
+						<span class="font-semibold">Email Support</span>
+					</a>
 				</div>
-			</section>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-
+			</div>
+		</section>
 	</body>
 </html>
